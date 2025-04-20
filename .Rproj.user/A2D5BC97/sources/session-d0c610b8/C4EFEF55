@@ -3,7 +3,7 @@
     "path": "~/GitHub/rmc_week_02_workshop/rmd/02_ncd_burden_CHILD.Rmd",
     "project_path": "rmd/02_ncd_burden_CHILD.Rmd",
     "type": "r_markdown",
-    "hash": "669096387",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1745165336552.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "50,351",
-        "scrollLine": "47"
+        "cursorPosition": "51,0",
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1745171955,
