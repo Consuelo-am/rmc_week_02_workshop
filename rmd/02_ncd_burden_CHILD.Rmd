@@ -21,12 +21,12 @@ head(data_ncd_mini)
 # Here render a table for the DALY burden over time for the three countries. 
 # You should pivot the data wider to show each country in a separate column.
 data_ncd_wide <- data_ncd_mini %>%
-  pivot_wider(names_from =Entity,
+  pivot_wider(names_from = Entity,
               values_from = `DALYs (Disability-Adjusted Life Years) - Non-communicable diseases - Sex: Both - Age: Age-standardized (Rate)`) %>% 
-  kable()
 
 
 # Use kable() from the knitr package to render the table.
+  kable(caption = "DALY Burden Over Time for Selected Countries")
 ```
 
 ## Plot Showing Trends in NCD Burden Over Time
@@ -34,8 +34,18 @@ data_ncd_wide <- data_ncd_mini %>%
 ```{r}
 # Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
 # NOTE: Use your long 'mini' data frame for plotting, not the wide data used for the table. 
+ggplot(data=data_ncd_mini,
+       aes(x=Year,
+           y=`DALYs (Disability-Adjusted Life Years) - Non-communicable diseases - Sex: Both - Age: Age-standardized (Rate)`,
+           color=Entity))+
+  geom_line(size=1)+
+  labs(title = "Non-communicable diseases in children over time",
+       color="Country",
+       y="DALY Burden")+
+  theme_minimal()
+
 ```
 
 ## Summary of NCD Burden Findings
 
-Provide a brief analysis based on the data presented in the table and chart. Highlight any significant findings or patterns. About 3 sentences.
+Ghana has the overall highest burden on Communicable diseases in children compared to the other countries. Also, from the year 1990 to 2020, Switzerland and Chile have observed a significant decrease in the DALY burden among children, underscoring great improvement in the area while not so much improvement have been observed among children in Ghana.

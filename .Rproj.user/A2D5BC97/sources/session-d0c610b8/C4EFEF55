@@ -3,7 +3,7 @@
     "path": "~/GitHub/rmc_week_02_workshop/rmd/02_ncd_burden_CHILD.Rmd",
     "project_path": "rmd/02_ncd_burden_CHILD.Rmd",
     "type": "r_markdown",
-    "hash": "3088717663",
+    "hash": "669096387",
     "contents": "",
     "dirty": false,
     "created": 1745165336552.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "22,0",
-        "scrollLine": "18"
+        "cursorPosition": "50,351",
+        "scrollLine": "47"
     },
     "folds": "",
-    "lastKnownWriteTime": 1745169896,
+    "lastKnownWriteTime": 1745171955,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1745169896838,
+    "last_content_update": 1745171955496,
     "read_only": false,
     "read_only_alternatives": []
 }

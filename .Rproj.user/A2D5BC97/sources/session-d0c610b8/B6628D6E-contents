@@ -1,0 +1,60 @@
+# Overall Disease Burden Ghana, Switzerland and Chile
+
+```{r}
+# Load necessary packages
+pacman::p_load(tidyverse, knitr, here)
+
+# Import the overall disease data
+data_overall <- read_csv(here("data/burden-of-disease-all-causes.csv"))
+view(data_overall)
+```
+
+```{r}
+# Filter the dataset to include only the three countries chosen by your group.
+data_overall_mini <- data_overall %>% 
+   filter(Entity %in% c("Ghana", "Switzerland", "Chile"))
+#view(data_overall_mini)
+#str(data_overall_mini)
+```
+
+## Table of Estimates for Overall Disease Burden Over Time
+
+```{r}
+# Here render a table for the DALY burden over time for the three countries. 
+# You should pivot the data wider to show each country in a separate column.
+
+data_overall_wide <- data_overall_mini %>% 
+  select(Year, Entity, `DALYs (Disability-Adjusted Life Years) - All causes - Sex: Both - Age: Age-standardized (Rate)`) %>% 
+  pivot_wider(names_from = Entity, values_from = `DALYs (Disability-Adjusted Life Years) - All causes - Sex: Both - Age: Age-standardized (Rate)`)
+
+# Use kable() from the knitr package to render the table.
+
+kable(data_overall_wide, caption = "DALY Burden Over Time for Selected Countries")
+
+```
+
+## Plot Showing Trends in Overall Disease Burden Over Time
+
+```{r}
+# Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
+# NOTE: Use your long 'mini' data frame for plotting, not the wide data used for the table. 
+
+# Convert back to long format for plotting
+data_overall_long <- data_overall_wide %>%
+  pivot_longer(cols = -Year, names_to = "Country", values_to = "DALY")
+
+# Plot
+ggplot(data_overall_long, aes(x = Year, y = DALY, color = Country)) +
+  geom_line(size = 1) +
+  labs(title = "DALY Burden Over Time",
+       x = "Year",
+       y = "Disability-Adjusted Life Years",
+       color = "Country") +
+  theme_minimal()
+
+
+```
+
+## Summary of Overall Disease Burden Findings
+
+Between 1990 and 2019, Ghana shows a gradual decline in the overall DALY burden, indicating improvements in public health, though the burden remains relatively high compared to the other two countries. Chile exhibits a moderate but steady decrease in DALYs over time, reflecting positive trends in disease prevention and healthcare access. In contrast, Switzerland consistently reports the lowest DALY burden throughout the period, with only minor fluctuations, suggesting a stable healthcare system.
