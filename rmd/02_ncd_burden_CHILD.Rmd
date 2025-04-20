@@ -20,10 +20,13 @@ head(data_ncd_mini)
 ```{r}
 # Here render a table for the DALY burden over time for the three countries. 
 # You should pivot the data wider to show each country in a separate column.
-data_ncd_wide <- data_ncd_mini %>% 
-  pivot_wider(cols="Entity",
-              names_to="Country",
-              values_from = "Value")
+data_ncd_wide <- data_ncd_mini %>%
+  pivot_wider(names_from =Entity,
+              values_from = `DALYs (Disability-Adjusted Life Years) - Non-communicable diseases - Sex: Both - Age: Age-standardized (Rate)`) %>% 
+  kable()
+
+data_ncd_wide
+
 # Use kable() from the knitr package to render the table.
 ```
 
