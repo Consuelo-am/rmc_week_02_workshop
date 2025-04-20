@@ -12,6 +12,7 @@ data_ncd <- read_csv(here("data/burden-of-disease-ncd.csv"))
 # Filter the dataset to include only the three countries chosen by your group.
 data_ncd_mini <- data_ncd %>% 
   filter(Entity%in%c("Ghana","Chile","Switzerland"))
+head(data_ncd_mini)
 ```
 
 ## Table of Estimates for NCD Burden Over Time
