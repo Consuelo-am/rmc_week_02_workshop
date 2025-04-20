@@ -22,6 +22,7 @@ data_overall_mini <- data_overall %>%
 ```{r}
 # Here render a table for the DALY burden over time for the three countries. 
 # You should pivot the data wider to show each country in a separate column.
+
 data_overall_wide <- data_overall_mini %>% 
   select(Year, Entity, `DALYs (Disability-Adjusted Life Years) - All causes - Sex: Both - Age: Age-standardized (Rate)`) %>% 
   pivot_wider(names_from = Entity, values_from = `DALYs (Disability-Adjusted Life Years) - All causes - Sex: Both - Age: Age-standardized (Rate)`)

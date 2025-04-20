@@ -377,6 +377,7 @@ data_overall_mini &lt;- data_overall %&gt;%
 <h2>Table of Estimates for Overall Disease Burden Over Time</h2>
 <pre class="r"><code># Here render a table for the DALY burden over time for the three countries. 
 # You should pivot the data wider to show each country in a separate column.
+
 data_overall_wide &lt;- data_overall_mini %&gt;% 
   select(Year, Entity, `DALYs (Disability-Adjusted Life Years) - All causes - Sex: Both - Age: Age-standardized (Rate)`) %&gt;% 
   pivot_wider(names_from = Entity, values_from = `DALYs (Disability-Adjusted Life Years) - All causes - Sex: Both - Age: Age-standardized (Rate)`)
