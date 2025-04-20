@@ -1,24 +1,24 @@
 {
-    "id": "A80FB12C",
-    "path": "~/GitHub/rmc_week_02_workshop/rmd/daly_report_PARENT.Rmd",
-    "project_path": "rmd/daly_report_PARENT.Rmd",
+    "id": "740F8F52",
+    "path": "~/GitHub/rmc_week_02_workshop/rmc_week_02_instructions.Rmd",
+    "project_path": "rmc_week_02_instructions.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2838598990",
     "contents": "",
     "dirty": false,
-    "created": 1745169884384.0,
+    "created": 1745165276234.0,
     "source_on_save": false,
-    "relative_order": 6,
+    "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1745168620,
+    "lastKnownWriteTime": 1745165081,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1745168620,
+    "last_content_update": 1745165081,
     "read_only": false,
     "read_only_alternatives": []
 }
