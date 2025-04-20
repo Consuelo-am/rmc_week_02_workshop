@@ -30,10 +30,6 @@ data_overall_wide <- data_overall_mini %>%
 
 kable(data_overall_wide, caption = "DALY Burden Over Time for Selected Countries")
 
-data_overall_wide %>% 
-  kable(caption = "DALY Burden Over Time for Selected Countries") %>%
-  kable_styling(full_width = FALSE, position = "center") %>%
-  column_spec(2:ncol(data_overall_wide), extra_css = "padding-left: 20px; padding-right: 20px;")
 ```
 
 ## Plot Showing Trends in Overall Disease Burden Over Time
