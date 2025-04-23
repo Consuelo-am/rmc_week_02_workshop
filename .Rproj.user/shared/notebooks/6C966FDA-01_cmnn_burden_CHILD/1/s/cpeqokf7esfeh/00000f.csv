@@ -1,0 +1,13 @@
+"0","# Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color."
+"0","# NOTE: Use your long 'mini' data frame for plotting, not the wide data used for the table. "
+"0",""
+"0","ggplot(data = data_cmnn_mini, "
+"0","       aes(x = Year, "
+"0","           y = `DALYs (Disability-Adjusted Life Years) - Communicable, maternal, neonatal, and nutritional diseases - Sex: Both - Age: Age-standardized (Rate)`, color = Entity)) +"
+"0","  geom_line(size = 1) +"
+"0","  labs (title = ""Communicable, maternal, neonatal, and nutritional diseases in children over time"","
+"0","        color = ""country"","
+"0","        y = ""DALY Burden"") +"
+"0","  theme_minimal()"
+"2","Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+Please use `linewidth` instead."
