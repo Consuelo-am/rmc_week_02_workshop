@@ -3,7 +3,7 @@
     "path": "~/1 MD-PhD/2 Lectures/R Masterclass/rmc_week_02_workshop/rmd/03_overall_burden_CHILD.Rmd",
     "project_path": "rmd/03_overall_burden_CHILD.Rmd",
     "type": "r_markdown",
-    "hash": "371002086",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1745165272555.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "0,0",
-        "scrollLine": "0"
+        "cursorPosition": "26,120",
+        "scrollLine": "9"
     },
     "folds": "",
     "lastKnownWriteTime": 1745414792,

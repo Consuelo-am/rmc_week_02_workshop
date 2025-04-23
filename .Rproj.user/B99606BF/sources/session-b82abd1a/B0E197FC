@@ -3,7 +3,7 @@
     "path": "~/1 MD-PhD/2 Lectures/R Masterclass/rmc_week_02_workshop/rmd/01_cmnn_burden_CHILD.Rmd",
     "project_path": "rmd/01_cmnn_burden_CHILD.Rmd",
     "type": "r_markdown",
-    "hash": "1289898320",
+    "hash": "1949829926",
     "contents": "",
     "dirty": false,
     "created": 1745169097542.0,
@@ -11,14 +11,16 @@
     "relative_order": 6,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "28,2",
+        "scrollLine": "20"
     },
     "folds": "",
-    "lastKnownWriteTime": 1745164940,
+    "lastKnownWriteTime": 1745417322,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1745164940,
+    "last_content_update": 1745417322603,
     "read_only": false,
     "read_only_alternatives": []
 }
