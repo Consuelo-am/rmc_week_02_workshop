@@ -13,7 +13,7 @@ data_cmnn <- read_csv(here("data/burden-of-disease-cmnn.csv"))
 data_cmnn_mini <- data_cmnn %>% 
   filter(Entity %in% c("Ghana", "Switzerland", "Chile"))
 
-head(data_cmnn_mini)
+#head(data_cmnn_mini)
 
 ```
 
@@ -23,12 +23,13 @@ head(data_cmnn_mini)
 # Here render a table for the DALY burden over time for the three countries.
 # You should pivot the data wider to show each country in a separate column.
 data_cmnn_wide <- data_cmnn_mini %>% 
+  select(Year, Entity, `DALYs (Disability-Adjusted Life Years) - Communicable, maternal, neonatal, and nutritional diseases - Sex: Both - Age: Age-standardized (Rate)`) %>% 
   pivot_wider(names_from = Entity,
-              values_from = `DALYs (Disability-Adjusted Life Years) - Communicable, maternal, neonatal, and nutritional diseases - Sex: Both - Age: Age-standardized (Rate)`) %>% 
+              values_from = `DALYs (Disability-Adjusted Life Years) - Communicable, maternal, neonatal, and nutritional diseases - Sex: Both - Age: Age-standardized (Rate)`)
   
 
 # Use kable() from the knitr package to render the table.
-  kable(caption = "DALY burden over time for Chile, Ghana and Switzerland")
+  kable(data_cmnn_wide, caption = "DALY burden over time for Chile, Ghana and Switzerland")
 
 ```
 
@@ -41,7 +42,7 @@ data_cmnn_wide <- data_cmnn_mini %>%
 ggplot(data = data_cmnn_mini, 
        aes(x = Year, 
            y = `DALYs (Disability-Adjusted Life Years) - Communicable, maternal, neonatal, and nutritional diseases - Sex: Both - Age: Age-standardized (Rate)`, color = Entity)) +
-  geom_line(size = 1) +
+  geom_line(linewidth = 1) +
   labs (title = "Communicable, maternal, neonatal, and nutritional diseases in children over time",
         color = "country",
         y = "DALY Burden") +

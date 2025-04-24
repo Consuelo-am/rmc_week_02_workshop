@@ -3,7 +3,7 @@
     "path": "C:/Users/consu/OneDrive/Desktop/R/2/Workshop/week2/rmc_week_02_workshop/rmd/01_cmnn_burden_CHILD.Rmd",
     "project_path": "rmd/01_cmnn_burden_CHILD.Rmd",
     "type": "r_markdown",
-    "hash": "9134296",
+    "hash": "1658985841",
     "contents": "",
     "dirty": false,
     "created": 1745165324210.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "53,376",
-        "scrollLine": "50",
+        "cursorPosition": "36,0",
+        "scrollLine": "34",
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
@@ -21,11 +21,11 @@
         "rmdVisualModeLocation": "2347:1718.22216796875"
     },
     "folds": "",
-    "lastKnownWriteTime": 1745402456,
+    "lastKnownWriteTime": 1745516221,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1745402456516,
+    "last_content_update": 1745516221352,
     "read_only": false,
     "read_only_alternatives": []
 }
