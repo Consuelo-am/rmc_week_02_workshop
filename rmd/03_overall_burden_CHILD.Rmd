@@ -45,7 +45,7 @@ data_overall_long <- data_overall_wide %>%
 
 # Plot
 ggplot(data_overall_long, aes(x = Year, y = DALY, color = Country)) +
-  geom_line(size = 1) +
+  geom_line(linewidth = 1) +
   labs(title = "DALY Burden Over Time",
        x = "Year",
        y = "Disability-Adjusted Life Years",
